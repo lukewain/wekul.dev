@@ -1,5 +1,6 @@
 html {
     background-color: darkgray;
+    filter: brightness(65%);
     font-family: 'Montserrat';
     color: #000
 }
@@ -31,15 +32,45 @@ h2 {
     opacity: 0;
 }
 
+.btnfloatinlft {
+    animation: btnfloatinlft 1.5s linear forwards;
+}
+
+.btnfloatinrgt {
+    animation: btnfloatinrgt 1.5s linear backwards;
+}
+
+.btnfloatinbtm {
+    animation: btnfloatinbtm 1.5s linear forwards;
+}
+
 @keyframes fadein {
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
 
 @keyframes floatin {
-    0% { transform: translate(0,  -30px); }
+    0% { transform: translate(0,  -50px); }
     50%  { transform: translate(0, -15px); }
     100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes btnfloatinlft {
+    0% { transform: translate(-20px, 0); }
+    50% { transform: translate(-10px, 0); }
+    100% { transform: translate(-0px, 0); }
+}
+
+@keyframes btnfloatinrgt {
+    0% { transform: translate(20px, 0); }
+    50% { transform: translate(10px, 0); }
+    100% { transform: translate(0px, 0); }
+}
+
+@keyframes btnfloatinbtm {
+    0% { transform: translate(0,  +20px); }
+    50%  { transform: translate(0, +10px); }
+    100%   { transform: translate(0, +0px); }    
 }
 
 #maintext {
@@ -49,7 +80,8 @@ h2 {
     margin: 1rem;
 }
 #clickhere {
-    color: #0000EE;
+    color: #043eff;
+    filter: brightness(130%)
 }
 #clickhere:hover {
     filter: brightness(50%);
