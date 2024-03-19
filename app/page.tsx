@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Typewriter from "react-ts-typewriter";
-import NavBar from "./components/navBar";
+import NavBar from "./components/navigation/navBar";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -12,8 +12,8 @@ export default function Home() {
     <NavBar />
     <div className="text-sm lg:flex">
       {/* Create typewriter in text */}
-      <div id="header" className="justify-center lsitems-center mt-10 mb-10">
-        <h1 id="main-grad" className="flex justify-center text-4xl font-bold">
+      <div id="header" className="justify-center lsitems-center ml-30 mt-10 mb-10">
+        <h1 id="main-grad" className="flex justify-center text-9xl font-bold">
           wekul.dev
         </h1>
       </div>
