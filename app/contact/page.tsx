@@ -1,6 +1,4 @@
-'use client';
 
-import Typewriter from "react-ts-typewriter"
 
 export default function Contact() {
     return (

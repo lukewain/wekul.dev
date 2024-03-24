@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       <div className="h-[2rem]" />
       <div id="buttons" className="mt-10 ml-auto mr-auto mx-auto flex flex-wrap gap-7 w-1/2 justify-center text-2xl">
-        <Button color="danger" size="lg" variant="faded" style={{background: "#9099E4", borderRadius: "3px", padding: "6px"}} id="booton">
+        <Button color="danger" size="lg" variant="faded" style={{background: "#9099E4", borderRadius: "3px", padding: "6px"}} id="disabledBooton" disabled={false}>
           Home
         </Button>
         <Button color="primary" size="lg" variant="faded" style={{background: "#9099E4", borderRadius: "3px", padding: "6px"}} id="booton">
